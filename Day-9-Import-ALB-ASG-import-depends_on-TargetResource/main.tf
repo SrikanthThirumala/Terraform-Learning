@@ -68,6 +68,7 @@ resource "aws_security_group" "sri-sg" {
     from_port = 0
     to_port = 0
     protocol = "-1"
+    cidr_blocks = [ "0.0.0.0/0" ]
     description = "allow all traffic"
   }
 }
